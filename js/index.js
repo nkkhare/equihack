@@ -35,7 +35,7 @@ $("#signup-submit").on("click", function(event){
 	$.ajax({
 			type: 'POST',
 			data: newuser,
-			url: 'http://192.168.43.127:3000/users/adduser',
+			url: 'http://10.155.73.117:3000/users/adduser',
 			dataType: 'JSON'
 		}).done(function( response ) {
 			// Check for successful (blank) response
@@ -75,7 +75,7 @@ $("#login-submit").on("click", function(event){
 	$.ajax({
 		type: 'POST',
 		data: query,
-		url: 'http://192.168.43.127:3000/users/userdetails',
+		url: 'http://10.155.73.117:3000/users/userdetails',
 		dataType: 'JSON',
 	}).done(function( response ) {
 			// Check for successful response
